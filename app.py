@@ -143,7 +143,7 @@ def bot():
 		while(True):
 		    u_ip = text1
 		    if u_ip.lower() in ex_ls:
-		      ans = str('MIT Bot: See you later!')
+		      ans = str('See you later!')
 		      break
 		    else:
 		      if greeting_resp(u_ip) != None:
