@@ -89,6 +89,15 @@ def bot():
 	corpus = a8.text
 	text = corpus
 	sens_lst.append(text)
+		
+	a8 = Article('https://www.webmd.com/lung/covid-19-symptoms#1')
+	a8.download()
+	a8.parse()
+	a8.nlp()
+	corpus = a8.text
+	text = corpus
+	sens_lst.append(text)
+
 
 	# returns a random greeting response
 	def greeting_resp(text):
