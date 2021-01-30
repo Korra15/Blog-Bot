@@ -97,6 +97,14 @@ def bot():
 	corpus = a8.text
 	text = corpus
 	sens_lst.append(text)
+	
+	a8 = Article('https://indianexpress.com/about/india-lockdown/')
+	a8.download()
+	a8.parse()
+	a8.nlp()
+	corpus = a8.text
+	text = corpus
+	sens_lst.append(text)
 
 
 	# returns a random greeting response
